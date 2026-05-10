@@ -1,0 +1,451 @@
+/* =============================================
+   STYLE.CSS - CSS CHUNG CHO TOÀN BỘ WEBSITE
+   ============================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============== CONTAINER ============== */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+  width: 100%;
+}
+
+/* ============== HEADER ============== */
+.site-header {
+  margin-top: 29px;
+  margin-bottom: 25px;
+  background-color: #d9d9d9;
+  border-radius: 8px;
+  height: 126px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.logo img {
+  height: 94px;
+  width: auto;
+  object-fit: contain;
+}
+
+.main-nav {
+  display: flex;
+  gap: 40px;
+  margin-left: 60px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.main-nav a:hover {
+  opacity: 0.7;
+}
+
+.main-nav .nav-link.active {
+  color: #0066ff;
+  position: relative;
+}
+
+.main-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #0066ff;
+  border-radius: 3px;
+}
+
+.search-container {
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  background-color: #595959;
+  border: none;
+  border-radius: 10px;
+  width: 233px;
+  height: 39px;
+  padding: 0 40px 0 15px;
+  color: #ffffff;
+  font-family: inherit;
+}
+
+.search-input:focus {
+  outline: 2px solid #000;
+}
+
+.search-btn {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.search-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ============== MAIN CONTENT ============== */
+#section-main {
+  padding-bottom: 50px;
+}
+
+.main-content-area {
+  background-color: #d9d9d9;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 60px 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+/* ============== HERO ============== */
+#hero {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  min-height: 326px;
+}
+
+.hero-text {
+  max-width: 502px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.hero-image {
+  position: absolute;
+  right: -20px;
+  top: -17px;
+  width: 489px;
+  height: 326px;
+  z-index: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ============== SECTION HEADER CHUNG ============== */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.see-all:hover {
+  text-decoration: underline;
+}
+
+/* ============== DANH MỤC ============== */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 70px;
+}
+
+.cat-card {
+  background-color: #b3b3b3;
+  border-radius: 20px;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px 10px;
+  transition: transform 0.2s ease;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ============== SO SÁNH ============== */
+.comparison-grid,
+.compare-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #b3b3b3;
+  border-radius: 20px;
+  padding: 40px 30px;
+}
+
+.compare-slot {
+  flex: 1;
+  height: 220px;
+  background-color: #d9d9d9;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed #868686;
+}
+
+.vs {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0066ff;
+}
+
+.app-select-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.app-select-item {
+  background-color: #b3b3b3;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.app-select-item:hover {
+  background-color: #a0a0a0;
+}
+
+.app-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-add {
+  background-color: #00c853;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-add:hover {
+  background-color: #00b248;
+  transform: scale(1.05);
+}
+
+/* So sánh card (trang chủ) */
+.compare-card {
+  background-color: #b3b3b3;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.compare-card:hover {
+  transform: translateY(-8px);
+}
+
+.btn-compare {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ============== BẢNG XẾP HẠNG ============== */
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rank-item {
+  margin: 10px;
+  background-color: #b3b3b3;
+  border-radius: 15px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rank-number {
+  font-size: 28px;
+  font-weight: 700;
+  width: 50px;
+  color: #0066ff;
+}
+
+.rank-app {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.app-icon-small {
+  width: 55px;
+  height: 55px;
+  background-color: #867f7f;
+  border-radius: 12px;
+}
+
+.rank-change.up {
+  color: #00cc00;
+}
+
+/* ============== RESPONSIVE ============== */
+@media (max-width: 1200px) {
+  .category-grid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .main-nav {
+    gap: 20px;
+    margin-left: 30px;
+    font-size: 14px;
+  }
+  .search-input {
+    width: 180px;
+  }
+
+  .main-content-area {
+    padding: 50px 40px;
+    gap: 60px;
+  }
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-image {
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .site-header {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main-nav {
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-container {
+    margin-left: 0;
+    width: 100%;
+    max-width: 300px;
+  }
+  .search-input {
+    width: 100%;
+  }
+
+  .main-content-area {
+    padding: 30px 20px;
+    gap: 40px;
+  }
+  .hero-text h1 {
+    font-size: 28px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .compare-box {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .app-select-list {
+    grid-template-columns: 1fr;
+  }
+}
+/* ============== ICON APP ============== */
+.app-icon-small {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  object-fit: cover; /* Giữ tỷ lệ ảnh đẹp */
+  flex-shrink: 0; /* Không bị co lại */
+  background-color: #767676; /* Màu nền dự phòng nếu ảnh chưa load */
+}

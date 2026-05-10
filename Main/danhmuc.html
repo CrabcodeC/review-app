@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Review App - Danh mục</title>
+  </head>
+  <body>
+    <section id="section-header">
+      <div class="container">
+        <header class="site-header">
+          <div class="logo">
+            <img src="img/logo.png" alt="AppReview Logo" />
+          </div>
+          <nav class="main-nav">
+            <a href="index.html" class="nav-link">TRANG CHỦ</a>
+            <a href="danhmuc.html" class="nav-link active">DANH MỤC</a>
+            <a href="sosanh.html" class="nav-link">SO SÁNH</a>
+            <a href="bangxephang.html" class="nav-link">BẢNG XẾP HẠNG</a>
+          </nav>
+          <div class="search-container">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Tìm ứng dụng..."
+            />
+            <button class="search-btn">
+              <img src="img/iconSearch.png" alt="" />
+            </button>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <section id="section-main">
+      <div class="container">
+        <main class="main-content-area">
+          <section class="inner-section">
+            <div class="section-header">
+              <h2>Tất cả danh mục ứng dụng</h2>
+            </div>
+
+            <div
+              class="category-grid"
+              style="
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 25px;
+              "
+            >
+              <!-- Danh mục mẫu - bạn có thể chèn icon vào div.icon -->
+              <div class="cat-card">
+                <div class="cat-icon">📚</div>
+                <h3>Học tập</h3>
+                <p>128 ứng dụng</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-icon">🎮</div>
+                <h3>Game</h3>
+                <p>210 ứng dụng</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-icon">👥</div>
+                <h3>Xã hội</h3>
+                <p>89 ứng dụng</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-icon">📸</div>
+                <h3>Ảnh & Video</h3>
+                <p>76 ứng dụng</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-icon">💰</div>
+                <h3>Tài chính</h3>
+                <p>64 ứng dụng</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-icon">🎵</div>
+                <h3>Âm nhạc</h3>
+                <p>55 ứng dụng</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-icon">🛒</div>
+                <h3>Mua sắm</h3>
+                <p>47 ứng dụng</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-icon">🏥</div>
+                <h3>Sức khỏe</h3>
+                <p>39 ứng dụng</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-icon">🍔</div>
+                <h3>Ẩm thực</h3>
+                <p>28 ứng dụng</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-icon">📰</div>
+                <h3>Tin tức</h3>
+                <p>33 ứng dụng</p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>
+
+    <style>
+      .cat-icon {
+        font-size: 42px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </body>
+</html>
